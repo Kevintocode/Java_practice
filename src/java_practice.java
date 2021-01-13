@@ -25,6 +25,25 @@ public class java_practice {
 //        return my_list.get(0);
 //    }
 
+
+
+    class Solution {
+        public int[] runningSum(int[] nums) {
+            int[] result = nums;
+            int temp = 0;
+
+            for(int i = 0; i < nums.length; i++){
+                result[i] = nums[i] + temp;
+                temp = nums[i];
+
+
+            }
+
+
+            return result;
+        }
+    }
+
 }
 
 
