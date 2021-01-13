@@ -1,4 +1,4 @@
-public class reverse_string {
+public class java_practice {
     public static void main(char[] s) {
         int left = 0, right = s.length-1;
         while(left < right){
