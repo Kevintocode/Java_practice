@@ -7,8 +7,23 @@ public class reverse_string {
             s[right--] = tmp ;
         }
     }
-}
 
+
+    public int singleNumber(int[] nums) {
+        List<Integer> my_list = new ArrayList<>();
+
+        for(int i : nums){
+            if(!my_list.contains(i)){
+                my_list.add(i);
+            }else{
+                my_list.remove(new Integer(i));
+            }
+        }
+
+        return my_list.get(0);
+    }
+
+}
 
 
 
