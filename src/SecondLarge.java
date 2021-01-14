@@ -1,18 +1,20 @@
 public class SecondLarge {
     public static int second(int arr[]){
-        int first, second;
-        first = Integer.MIN_VALUE;
-        second = Integer.MIN_VALUE;
+        int first_large, second_large;
+        first_large = Integer.MIN_VALUE;
+        second_large = Integer.MIN_VALUE;
 
-        for(int i=0; i < arr.length; i++){
-            if(arr[i] > first){
-                second = first;
-                first = arr[i];
-            }else if(arr[i] > second && arr[i] != first){
-                second = arr[i];
+
+        for(int i = 0; i < arr.length; i ++){
+            if (arr[i] > first_large){
+                second_large = first_large;
+                first_large = arr[i];
+            }else if(arr[i] > second_large && arr[i] != first_large){
+                second_large = arr[i];
             }
         }
-        return second;
+
+        return second_large;
     }
 
     public static void main(String[] args){
